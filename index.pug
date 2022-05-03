@@ -1,0 +1,79 @@
+doctype  html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title PUG | JS
+        // Style Fils 
+        include includes/style.pug
+    body
+        //Preloader
+        <div class="loader loader-44 loding" id="loader">
+            <div class="loader-container"></div>
+            <span class='loader-numbers'>0%</span>
+        </div>
+        // Cursor 
+        //.cursor 
+        // Navbar of Page
+        include includes/nav.pug
+        // Head of Page
+        include includes/head.pug
+        // Background body
+        div.bg-left-1
+            img(src="assets/imges/bg/Left Leaves@2x.png",class="im-responsev")
+        div.bg-right-1
+            img(src="assets/imges/bg/Left Leaves@2x.png",class="im-responsev")
+        div.bg-right-2
+            img(src="assets/imges/bg/Leaves.png",class="im-responsev")
+        // Section Things I Do
+        section.things.text-center.pt-3.pb-3
+            h4.mb-5 Things I Do 
+            div.container.mg-3
+                div.things__box.row.mt-5
+                    div(class="things__img col-md-6 col-12", data-aos="fade-right")
+                        img(src="assets/imges/things/Group 8.png")
+                    div(class="things__inf col-md-6 col-12 pl-5 pt-5",data-aos="fade-left")
+                        h4 Strategy
+                        p There’s no style over substance here. I bring together form and the function to create something that looks good and performs brilliantly. Simple.
+                .dotted-lin 
+                    img(src="assets/imges/things/Dotted LIne1.png")
+                div(class=" things__box row",data-aos="zoom-in")
+                    .things__inf.col-md-6.col-12.pl-5.pt-5
+                        h4 Information Architecture
+                        p It’s about organizing the content and flow of a website based on research and planning. Eventually I come up with a structure/design that balances the users’ desires with the business’s needs.
+                    .things__img.col-md-6.col-12
+                        img(src="assets/imges/things/Group 6.png")
+                .dotted-lin 
+                    img(src="assets/imges/things/Dotted LIne2.png")
+                div.things__box.row
+                    .things__img.col-md-6.col-12
+                        img(src="assets/imges/things/Group 140.png")
+                    .things__inf.col-md-6.col-12.pl-5.pt-5
+                        h4 Design & Development
+                        p As a designer and developer, I understand the perfect user interface should look good and work even better. Alongside my clients, I uncover problems and solve them. In short, I create bolder online experiences.
+        // work Section
+        section(class="work text-center pt-5 pb-5 mt-5 bg-lif",data-aos="zoom-in", data-aos-duration="3000")
+            .container 
+                div(class="work__Head") 
+                    h4 Recent Work
+                .work__img.row.mt-5.mb-5
+                    .work__box.col-12.col-md-6.pt-5 
+                        img(src="assets/imges/works/Project1.png",class="pt-5 hvr-bob")
+                    .work__box.col-12.col-md-6.pt-5
+                        img(src="assets/imges/works/Project2.png",class="hvr-bob")
+                    .work__box.col-12.col-md-6.pt-5
+                        img(src="assets/imges/works/Project3.png",class="pt-5 hvr-bob")
+                    .work__box.col-12.col-md-6.pt-5
+                        img(src="assets/imges/works/Project4.png",class="hvr-bob")
+                .work__but.mt-5
+                    button(type="button",class="btn btn-min-color p-3 hvr-float-shadow") 
+                        a(href="work.html") Viwe Work
+        // Logos
+        include includes/logo.pug
+        // Contact
+        include includes/contact.pug
+        // Footer of Page
+        include includes/foot.pug
+        // Script Fils
+        include includes/script.pug

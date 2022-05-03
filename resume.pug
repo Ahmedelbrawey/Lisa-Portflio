@@ -1,0 +1,128 @@
+doctype  html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title PUG | JS
+        // Style Fils 
+        include includes/style.pug
+    body
+        //Preloader
+        <div class="loader loader-44 loding" id="loader">
+            <div class="loader-container"></div>
+            <span class='loader-numbers'>0%</span>
+        </div>
+        // Navbar of Page
+        include includes/nav.pug
+        // Head of Page
+        include includes/head.pug
+        .container.about__info.mt-5.mb-5
+            .row 
+                div(class="img col-md-6 col-12",data-aos="fade-right")
+                    .box-img.move-top
+                        img(src="assets/imges/girl.jpg", alt="About-Me",class="im-responsev")
+                div(class="info col-md-6 col-12",data-aos="fade-left")
+                    .box-info 
+                        h2 ABOUT ME
+                        p.pt-3 Hello! I'm Alan Walker. I'm a web developer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
+                        button(class="btn btn-min-color p-3 mt-3 hvr-grow")
+                           a(href="/assets/imges/girl.jpg",download) Dowenload Cv
+        .container-flue.skills.mt-5.mb-5.pt-10.pb-10
+            .container
+                .row
+                    .info.col-md-6.col-12
+                        h2 I have high skills in developing and programming
+                        p I was doing everything in my power to provide me with all the experiences to provide cost-effective and high quality products to satisfy my customers all over the world
+                    div(class="progress-box col-md-6 col-12",data-aos="fade-left",
+                        data-aos-offset="300",
+                        data-aos-easing="ease-in-sine")
+                        div.clearfix.mt-3
+                            span.float-left Web Development 
+                            span.float-right 95% 
+                        .progress.mt-1
+                            div(class="progress-bar",role="progressbar",style="width: 90%",aria-valuenow="90",aria-valuemin="0",aria-valuemax="100")
+                        div.clearfix.mt-3
+                            span.float-left UX UL 
+                            span.float-right 70% 
+                        .progress.mt-1
+                            div(class="progress-bar",role="progressbar",style="width: 70%",aria-valuenow="70",aria-valuemin="0",aria-valuemax="100") 
+                        div.clearfix.mt-3
+                            span.float-left Designe 
+                            span.float-right  80% 
+                        .progress.mt-1
+                            div(class="progress-bar",role="progressbar",style="width: 80%",aria-valuenow="80",aria-valuemin="0",aria-valuemax="100")
+        section.section.pt-10.pb-10.bg-lif
+            .container
+                .row.justify-content-center
+                    .col-lg-7.text-center
+                        div.section-title
+                            h2 Testimonials
+                            p
+                            | I design and develop services for customers of all sizes, specializing in creating stylish, modern websites
+                .owl-carousel.owl-theme#testimonials
+                    .item
+                        .testimonial-col-01
+                            .media.align-items-center.d-flex
+                                .img
+                                    img(src='assets/imges/tem/tem-1.jpg' class="im-responsev")
+                                .media-body.col.ps-3
+                                .tc-info
+                                    h6 Nancy Bayers
+                                    span Founder &amp; CEO at Pxdraft
+                            p.lead
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    .item
+                        .testimonial-col-01
+                            .media.align-items-center.d-flex
+                                .img
+                                    img(src='assets/imges/tem/tem-2.jpg' class="im-responsev")
+                                .media-body.col.ps-3
+                                .tc-info
+                                    h6 Nancy Bayers
+                                    span Founder &amp; CEO at Pxdraft
+                            p.lead
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    .item
+                        .testimonial-col-01
+                            .media.align-items-center.d-flex
+                                .img
+                                    img(src='assets/imges/tem/tem-3.jpg' class="im-responsev")
+                                .media-body.col.ps-3
+                                .tc-info
+                                    h6 Nancy Bayers
+                                    span Founder &amp; CEO at Pxdraft
+                            p.lead
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    .item
+                        .testimonial-col-01
+                            .media.align-items-center.d-flex
+                                .img
+                                    img(src='assets/imges/Tem/tem-4.jpeg' class="im-responsev")
+                                .media-body.col.ps-3
+                                .tc-info
+                                    h6 Nancy Bayers
+                                    span Founder &amp; CEO at Pxdraft
+                            p.lead
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    .item
+                        .testimonial-col-01
+                            .media.align-items-center.d-flex
+                                .img
+                                    img(src='assets/imges/tem/tem-1.jpg' class="im-responsev")
+                                .media-body.col.ps-3
+                                .tc-info
+                                    h6 Nancy Bayers
+                                    span Founder &amp; CEO at Pxdraft
+                            p.lead
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    
+                    
+        // What I do
+        include includes/What.pug
+        // Contact
+        include includes/contact.pug
+        // Footer of Page
+        include includes/foot.pug
+        // Script Fils
+        include includes/script.pug

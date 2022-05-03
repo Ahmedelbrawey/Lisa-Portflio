@@ -1,0 +1,53 @@
+section#contact.section.pb-10.pt-10(data-scroll-index='6')
+  .container
+    .row.justify-content-center
+      .col-lg-7.text-center
+        .section-title
+          h2 Get In Touch
+          p
+            | I design and develop services for customers of all sizes, specializing in creating stylish, modern websites
+    .row.flex-row-reverse
+      .col-md-7.col-lg-8.m-15px-tb
+        .contact-form
+          form#contact-form(method='POST')
+            .row.gy-3
+              .col-md-6
+                .form-group
+                  input#name.form-control(name='Name' placeholder='Name *' type='text')
+                  span.input-focus-effect.theme-bg
+              .col-md-6
+                .form-group
+                  input#email.form-control(name='Email' placeholder='Email *' type='email')
+                  span.input-focus-effect.theme-bg
+              .col-12
+                .form-group
+                  input#subject.form-control(name='Subject' placeholder='Subject *' type='text')
+                  span.input-focus-effect.theme-bg
+              .col-md-12
+                .form-group
+                  textarea#message.form-control(name='message' placeholder='Your message *' rows='3')
+                  span.input-focus-effect.theme-bg
+              .col-md-12
+                .send
+                  button(class="btn btn-min-color p-3 hvr-float-shadow" onclick='send_mail()' type='button' value='Send' ) Contact Us              
+      .col-md-5.col-lg-4.m-15px-tb
+        .contact-info
+          .contact-name
+            h5 Mail
+            p info@domainname.com
+          .contact-name
+            h5 Visit My Studio
+            p
+              | Warnwe Park Streetperrine, 
+              br
+              | FL 33157 New York City
+          .contact-name
+            h5 Phone
+            p +01 123 654 8096
+          .social-share.nav
+            a.dribbble(href='#')
+              i.fab.fa-dribbble
+            a.behance(href='#')
+              i.fab.fa-behance
+            a.linkedin(href='#')
+              i.fab.fa-linkedin-in

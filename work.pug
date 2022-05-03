@@ -1,0 +1,68 @@
+doctype  html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Works
+        // Style Fils 
+        include includes/style.pug
+    body
+        //Preloader
+        <div class="loader loader-44 loding" id="loader">
+            <div class="loader-container"></div>
+            <span class='loader-numbers'>0%</span>
+        </div>
+        // Cursor 
+        //.cursor 
+        // Navbar of Page
+        include includes/nav.pug
+        // Head of Page
+        include includes/head.pug
+        // Background body
+        div.bg-left-1
+            img(src="assets/imges/bg/Left Leaves@2x.png",class="im-responsev")
+        div.bg-right-1
+            img(src="assets/imges/bg/Left Leaves@2x.png",class="im-responsev")
+        
+        // work Section
+        section.work.text-center.pt-5.pb-5.mt-5.bg-lif
+            .container 
+                .work__Head 
+                    h4 Works 
+                    ul.work__ul.d-flex.justify-content-center
+                        li(class=" all active", data-cat=".all") All
+                        li(class=" all graphic", data-cat=".graphic") Graphic
+                        li(class=" all Web", data-cat=".web") Web Design
+                        li(class=" all photo", data-cat=".photo") photo
+                .work__img.row.mt-5.mb-5#work_img
+                    .work__box.work--size.col-12.col-md-4.all.photo
+                        img(src="assets/imges/works/Project1.png",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.photo
+                        img(src="assets/imges/works/Project2.png",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.photo
+                        img(src="assets/imges/works/Project3.png",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.photo
+                        img(src="assets/imges/works/Project4.png",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.graphic
+                        img(src="assets/imges/works/gfx.jpg",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.graphic
+                        img(src="assets/imges/works/gfx3.jpg",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.graphic
+                        img(src="assets/imges/works/gfx2.avif",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.photo
+                        img(src="assets/imges/works/photo.jpg",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.photo
+                        img(src="assets/imges/works/photo1.png",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.web
+                        img(src="assets/imges/works/wep1.jpg",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.web
+                        img(src="assets/imges/works/wep2.jpg",class="im-responsev")
+                    .work__box.work--size.col-12.col-md-4.all.web
+                        img(src="assets/imges/works/wep3.webp",class="im-responsev")
+        // Contact
+        include includes/contact.pug
+        // Footer of Page
+        include includes/foot.pug
+        // Script Fils
+        include includes/script.pug
